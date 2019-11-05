@@ -1,0 +1,69 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+
+  long x,y,z,end1=00000;
+  string end = "end";
+  string mmd;
+  string plus = "plus";
+  string plus1= "+";
+  string negative = "negative";
+  string negative1 = "-";
+  string multiplication = "multi";
+  string multiplication1 = "*";
+  string division = "/";
+  string division1 = "division";
+  while(true) {
+    cout<< "Addad Aval ro vared konid = "; cin >> x;
+    cout << "plus(+) or negative(-) or multi(*) or division(/) : ";cin >> mmd;
+    cout << "Addade badi ro vared konid = ";cin>>y;
+    if (mmd==plus1 or mmd==plus){
+      z=x+y;
+      cout <<"---->  " <<z<<endl;
+      cout << "plus(+) or negative(-) or multi(*) or division(/) : ";cin >>mmd;
+        while (mmd==plus1 or mmd==plus){
+          do{
+          int temp=z;
+          z=y;
+          y=temp;
+          cout << "Addade badi ro vared konid = ";
+          cin>>x;
+          z=x+y;
+          cout <<"---->  " <<z<<endl;
+          cout << "plus(+) or negative(-) or multi(*) or division(/) : ";
+          cin>>mmd;
+          }
+          while (mmd==plus1 or mmd==plus);}
+          while (mmd==negative1){
+              do{
+          int temp=z;
+          z=y;
+          y=temp;
+          cout << "Addade badi ro vared konid = ";
+          cin>>x;
+          z=y-x;
+          cout <<"---->  " <<z<<endl;
+          cout << "plus(+) or negative(-) or multi(*) or division(/) : ";
+          cin>>mmd;
+          
+          }
+          while (mmd==negative1);
+          }
+          
+        
+        
+        
+//    }
+//    if (mmd==negative1){
+//      
+//    }
+//    if (mmd==multiplication1){
+//      
+//    }
+//    if (mmd==division1){
+//      
+    }
+  }
+}
